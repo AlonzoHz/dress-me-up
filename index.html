@@ -4,15 +4,18 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="alonzo">
-            <img src="image/alonzo.png" alt="alonzo"/>
-            <br/>
-            <select id="options" onChange="OnDropdownChange()">
-              <option value="shirts">Shirts</option>
-              <option value="pants">Pants</option>
-              <option value="socks">Socks</option>
-              <option value="shoes">Shoes</option>
-            </select>
+        <div id="container">
+            <div id="alonzo">
+                <img src="image/alonzo.png" alt="alonzo"/>
+                <img src="image/shirt.png" alt="shirt" id="shirt"/>
+                <br/>
+                <select id="options" onChange="OnDropdownChange()">
+                  <option value="shirts">Shirts</option>
+                  <option value="pants">Pants</option>
+                  <option value="socks">Socks</option>
+                  <option value="shoes">Shoes</option>
+                </select>
+            </div>
         </div>
         <div id="clothes">
             Choose socks to see a change

@@ -1,6 +1,12 @@
-#alonzo {
+#container {
     margin: 0 auto;
-    width: 500px;
+    width: 500px;;
+}
+
+#alonzo {
+    width: 200px;
+    padding: 0px;
+    position: relative;
 }
 
 #clothes {
@@ -8,4 +14,10 @@
     margin: 0 auto;
     overflow: auto;
     height: 60%; 
+}
+
+#shirt {
+    position: absolute;
+    bottom: 17px;
+    right: 0px;
 }
