@@ -28,8 +28,24 @@
     display: none;
 }
 
+#socks {
+    position: absolute;
+    bottom: 17px;
+    display: none;
+}
+
 #shoes {
     position: absolute;
     bottom: 17px;
     display: none;
+}
+
+.option {
+    border: dotted 1px black;
+    width: 100px;
+    height: 100px;
+}
+
+.option:hover {
+    border: solid 1px red;
 }

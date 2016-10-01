@@ -9,9 +9,10 @@
                 <img src="image/alonzo.png" alt="alonzo"/>
                 <img src="image/pants.png" alt="pants" id="pants"/>
                 <img src="image/shirt.png" alt="shirt" id="shirt"/>
+                <img src="image/shoes.png" alt="shoes" id="socks"/>
                 <img src="image/shoes.png" alt="shoes" id="shoes"/>
                 <br/>
-                <select id="options" onChange="OnDropdownChange()">
+                <select id="clothing-types" onChange="OnDropdownChange()">
                   <option value="shirt-options">Shirts</option>
                   <option value="pant-options">Pants</option>
                   <option value="sock-options">Socks</option>
@@ -21,27 +22,16 @@
         </div>
         <div id="clothes">
             <div id="shirt-options">
-                <img src="image/shirt.png" alt="shirt"/>
-                <img src="image/shirt.png" alt="shirt">
-                <img src="image/shirt.png" alt="shirt"/>
-                <img src="image/shirt.png" alt="shirt"/>
+                <img src="image/no-choice.png" alt="no choice" class="option" id="shirt0"/>
+                <img src="image/shirt.png" alt="shirt" class="option" id="shirt1"/>
             </div>
             <div id="pant-options" style="display:none;">
-                <img src="image/pants.png" alt="pants"/>
-                <img src="image/pants.png" alt="pants"/>
-                <img src="image/pants.png" alt="pants"/>
                 <img src="image/pants.png" alt="pants"/>
             </div>
             <div id="sock-options" style="display:none;">
                 <img src="image/shoes.png" alt="shoes"/>
-                <img src="image/shoes.png" alt="shoes"/>
-                <img src="image/shoes.png" alt="shoes"/>
-                <img src="image/shoes.png" alt="shoes"/>
             </div>
             <div id="shoe-options" style="display:none;">
-                <img src="image/shoes.png" alt="shoes"/>
-                <img src="image/shoes.png" alt="shoes"/>
-                <img src="image/shoes.png" alt="shoes"/>
                 <img src="image/shoes.png" alt="shoes"/>
             </div>
         <div>
@@ -49,8 +39,19 @@
             var category = "shirt-options";
             function OnDropdownChange() {
                 document.getElementById(category).style.display = "none";
-                category = document.getElementById("options").value;
+                category = document.getElementById("clothing-types").value;
                 document.getElementById(category).style.display = "block";
+            }
+
+            var shirt0 = document.getElementById("shirt0");
+            shirt0.onclick = function() {
+                document.getElementById("shirt").style.display = "none";
+            }
+
+            var shirt1 = document.getElementById("shirt1");
+            shirt1.onclick = function() {
+                document.getElementById("shirt").style.display = "inline";
+                document.getElementById("shirt").src = "image/shirt.png";
             }
         </script>
     </body>
