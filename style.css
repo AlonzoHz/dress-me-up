@@ -19,5 +19,17 @@
 #shirt {
     position: absolute;
     bottom: 17px;
-    right: 0px;
+    display: none;
+}
+
+#pants {
+    position: absolute;
+    bottom: 17px;
+    display: none;
+}
+
+#shoes {
+    position: absolute;
+    bottom: 17px;
+    display: none;
 }
