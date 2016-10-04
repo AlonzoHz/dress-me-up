@@ -10,11 +10,11 @@
     <body>
         <div id="container">
             <div id="alonzo">
-                <img src="image/alonzo.png" alt="alonzo"/>
-                <img src="image/shoes.png" alt="shoes" id="socks"/>
-                <img src="image/shoes.png" alt="shoes" id="shoes"/>
-                <img src="image/pants.png" alt="pants" id="pants"/>
-                <img src="image/shirt.png" alt="shirt" id="shirt"/>
+                <img src="images/alonzo.png" alt="alonzo"/>
+                <img alt="shoes" id="socks"/>
+                <img alt="shoes" id="shoes"/>
+                <img alt="pants" id="pants"/>
+                <img alt="shirt" id="shirt"/>
                 <br/>
                 <select id="clothing-types" onChange="OnDropdownChange()">
                   <option value="shirt-options">Shirts</option>
@@ -26,7 +26,7 @@
         </div>
         <div id="clothes">
             <div id="shirt-options">
-                <img src="image/no-choice.png" alt="no choice" class="option" id="shirt0"/>
+                <img src="images/no-choice.png" alt="no choice" class="option" id="shirt0"/>
                 <script>
                     var shirt0 = document.getElementById("shirt0");
                     shirt0.onclick = function() {
@@ -42,12 +42,12 @@
                             $name = $query_row['name'];
                             $image = $query_row['image'];
 
-                            echo "<img src='$image' alt='$name' class='option' id='shirt$item'/>";
+                            echo "<img src='images/shirts/$image' alt='$name' class='option' id='shirt$item'/>";
                             echo "<script>
                                       var shirt$item = document.getElementById('shirt$item');
                                       shirt$item.onclick = function() {
                                           document.getElementById('shirt').style.display = 'inline';
-                                          document.getElementById('shirt').src = '$image';
+                                          document.getElementById('shirt').src = 'images/shirts/$image';
                                       }
                                   </script>";
                             $item += 1;
@@ -56,7 +56,7 @@
                 ?>
             </div>
             <div id="pant-options" style="display:none;">
-                <img src="image/no-choice.png" alt="no choice" class="option" id="pants0"/>
+                <img src="images/no-choice.png" alt="no choice" class="option" id="pants0"/>
                 <script>
                     var pants0 = document.getElementById("pants0");
                     pants0.onclick = function() {
@@ -72,12 +72,12 @@
                             $name = $query_row['name'];
                             $image = $query_row['image'];
 
-                            echo "<img src='$image' alt='$name' class='option' id='pants$item'/>";
+                            echo "<img src='images/pants/$image' alt='$name' class='option' id='pants$item'/>";
                             echo "<script>
                                       var pants$item = document.getElementById('pants$item');
                                       pants$item.onclick = function() {
                                           document.getElementById('pants').style.display = 'inline';
-                                          document.getElementById('pants').src = '$image';
+                                          document.getElementById('pants').src = 'images/pants/$image';
                                       }
                                   </script>";
 
@@ -87,7 +87,7 @@
                 ?>
             </div>
             <div id="sock-options" style="display:none;">
-                <img src="image/no-choice.png" alt="no choice" class="option" id="socks0"/>
+                <img src="images/no-choice.png" alt="no choice" class="option" id="socks0"/>
                 <script>
                     var socks0 = document.getElementById("socks0");
                     socks0.onclick = function() {
@@ -103,12 +103,12 @@
                             $name = $query_row['name'];
                             $image = $query_row['image'];
 
-                            echo "<img src='$image' alt='$name' class='option' id='socks$item'/>";
+                            echo "<img src='images/socks/$image' alt='$name' class='option' id='socks$item'/>";
                             echo "<script>
                                       var socks$item = document.getElementById('socks$item');
                                       socks$item.onclick = function() {
                                           document.getElementById('socks').style.display = 'inline';
-                                          document.getElementById('socks').src = '$image';
+                                          document.getElementById('socks').src = 'images/socks/$image';
                                       }
                                   </script>";
 
@@ -118,7 +118,7 @@
                 ?>
             </div>
             <div id="shoe-options" style="display:none;">
-                <img src="image/no-choice.png" alt="no choice" class="option" id="shoes0"/>
+                <img src="images/no-choice.png" alt="no choice" class="option" id="shoes0"/>
                 <script>
                     var shoes0 = document.getElementById("shoes0");
                     shoes0.onclick = function() {
@@ -134,12 +134,12 @@
                             $name = $query_row['name'];
                             $image = $query_row['image'];
 
-                            echo "<img src='$image' alt='$name' class='option' id='shoes$item'/>";
+                            echo "<img src='images/shoes/$image' alt='$name' class='option' id='shoes$item'/>";
                             echo "<script>
                                       var shoes$item = document.getElementById('shoes$item');
                                       shoes$item.onclick = function() {
                                           document.getElementById('shoes').style.display = 'inline';
-                                          document.getElementById('shoes').src = '$image';
+                                          document.getElementById('shoes').src = 'images/shoes/$image';
                                       }
                                   </script>";
 
