@@ -19,24 +19,28 @@
 #shirt {
     position: absolute;
     bottom: 17px;
+    left: 0px;
     display: none;
 }
 
 #pants {
     position: absolute;
     bottom: 17px;
+    left: 0px;
     display: none;
 }
 
 #socks {
     position: absolute;
     bottom: 17px;
+    left: 0px;
     display: none;
 }
 
 #shoes {
     position: absolute;
     bottom: 17px;
+    left: 0px;
     display: none;
 }
 

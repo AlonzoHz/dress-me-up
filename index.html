@@ -2,6 +2,7 @@
     <head>
         <title>Dress Alonzo Up!</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <?php require_once 'login.php'?>
     </head>
     <body>
         <div id="container">
@@ -22,13 +23,19 @@
         </div>
         <div id="clothes">
             <div id="shirt-options">
+                <!-- Echo shirt options -->
+                <?php
+                    
+                ?>
                 <img src="image/no-choice.png" alt="no choice" class="option" id="shirt0"/>
                 <img src="image/shirt.png" alt="shirt" class="option" id="shirt1"/>
             </div>
             <div id="pant-options" style="display:none;">
+                <!-- Echo pant options -->
                 <img src="image/pants.png" alt="pants"/>
             </div>
             <div id="sock-options" style="display:none;">
+                
                 <img src="image/shoes.png" alt="shoes"/>
             </div>
             <div id="shoe-options" style="display:none;">
@@ -42,6 +49,7 @@
                 category = document.getElementById("clothing-types").value;
                 document.getElementById(category).style.display = "block";
             }
+        </script>
 
             var shirt0 = document.getElementById("shirt0");
             shirt0.onclick = function() {
@@ -53,6 +61,5 @@
                 document.getElementById("shirt").style.display = "inline";
                 document.getElementById("shirt").src = "image/shirt.png";
             }
-        </script>
     </body>
 </html>
